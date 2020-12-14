@@ -1,0 +1,15 @@
+body
+{
+    background-image: url("fondo3.f573ffeba960.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 1300px;
+    height: 720px;
+    text-align: center;
+}
+.back
+{
+    padding: 200px;
+}

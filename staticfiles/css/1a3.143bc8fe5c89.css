@@ -1,0 +1,280 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+p{
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: justify;
+}
+.container, .book-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: url("fondo3.f573ffeba960.png");
+	background-size: cover;
+}
+.book-content{
+	width: 65%;
+	min-width: 250px;
+	max-width: 770px;
+	height: 680px;
+	position: relative;
+	perspective: 1000px;
+	transition: 1s;
+}
+.book{
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left; 
+}
+.face-front, .face-back{
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.face-front{
+	box-shadow: inset 3px 0px 20px -7px black;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.face-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	box-shadow: inset -3px 1px 20px -7px black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#portada{
+	background: url("../img/1a3/1.2933686d1575.png");
+}
+#portada-back{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_24.2fd54cf403e4.png");
+}
+#portada, #portada-back{
+	background-size: 100% 100%;
+}
+
+.c5
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_5.5976a673fbc8.png");
+	background-size: 98%;
+}
+
+.c7
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_7.b826aa71fb4c.png");
+	background-size: 98%;
+}
+
+.c9
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_9.019d91005be7.png");
+	background-size: 98%;
+}
+
+.c11
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_11.afd432b4b5bf.png");
+	background-size: 98%;
+}
+
+.c13
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_13.37e47dfb567e.png");
+	background-size: 98%;
+}
+
+.c15
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_15.68f596faf6a7.png");
+	background-size: 98%;
+}
+
+.c17
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_17.2780c85b8d49.png");
+	background-size: 98%;
+}
+
+.c19
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_19.5960b85d7006.png");
+	background-size: 98%;
+}
+
+.c21
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_21.8a3dc8d4db1c.png");
+	background-size: 98%;
+}
+
+.c22
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_22.712a03135276.png");
+	background-size: 98%;
+}
+
+.c23
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_23.4f6e86aa8d33.png");
+	background-size: 98%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+#canvas2
+
+{
+	
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_2.b7010da381b7.png");
+	background-size:95% ;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	box-shadow: inset -3px 1px 20px -7px black;
+}
+
+
+/* Clases que se agregaran con Javascript */
+
+.trnsf{
+	transform: translateX(80px);
+}
+.trnsf-reset{
+	transform: translateX(0px);
+}
+
+.p1
+{
+    background-image: url("../img/1a3/1.2933686d1575.png");
+}
+
+
+#p3
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_3.fa0931749192.png");
+	background-size: 95%;
+}
+
+#p4
+{
+    background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_4.8f1d2f47d33b.png");
+    background-size: 95%;
+}
+
+#trsf
+{
+    background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_2.b7010da381b7.png");
+	background-size: 95%;
+	
+}
+#p5
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_5.5976a673fbc8.png");
+	background-size: 95%;
+}
+#p6
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_6.3a7514337cd7.png");
+	background-size: 95%;
+}
+#p7
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_7.b826aa71fb4c.png");
+	background-size: 95%;
+}
+#p8
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_8.d4a5aabe31d9.png");
+	background-size: 95%;
+}
+#p9
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_9.019d91005be7.png");
+	background-size: 95%;
+}
+#p10
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_10.b0ccffdafaa9.png");
+	background-size: 95%;
+}
+#p11
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_11.afd432b4b5bf.png");
+	background-size: 95%;
+}
+#p12
+{
+	background: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_12.775f1fc54e63.png");
+	background-size: 95%;
+}
+#p13 /*ultima linea*/
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_13_3.73a06ec23dc9.png");
+	background-size: 95%;
+}
+#p14
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_14.7f5bd4b83cb7.png");
+	background-size: 95%;
+}
+#p15 /*ultima estrella*/
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_15_3.7ccc1feaae26.png");
+	background-size: 95%;
+}
+#p16
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_16.5ee27a225261.png");
+	background-size: 95%;
+}
+#p17 /*quitar pies*/
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_17_3.40db901e35ce.png");
+	background-size: 95%;
+}
+#p18
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_18.b92ba5114c78.png");
+	background-size: 95%;
+}
+#p19 /*quitar pies*/
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_19_3.5ec5f511a603.png");
+	background-size: 95%;
+}
+#p20
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_20.04cd6deb35c8.png");
+	background-size: 95%;
+}
+#p21
+{
+	background-image: url("../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_21.8a3dc8d4db1c.png");
+	background-size: 95%;
+}
+/* @media para hacer el texto responsivo */
+
+@media screen and (max-width: 800px){
+	p{
+		font-size: 12px;
+	}
+}
+
+
