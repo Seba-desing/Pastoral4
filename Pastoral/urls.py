@@ -18,6 +18,7 @@ from django.urls import path, include
 from .views import tres, seis, registrar_usuario, index2, listar_usuarios, privacidad
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index2/', index2),
@@ -28,7 +29,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('registro/', registrar_usuario, name="registrar"),
     path('listar_usuarios/', listar_usuarios, name="listar"),
-    path('', include('allauth.urls')),
+    path('', RedirectView.as_view(url='/accounts/login/')),
     path('privacidad/', privacidad),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
