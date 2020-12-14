@@ -15,6 +15,10 @@ import os
 import  dj_database_url
 from decouple import config
 import django_heroku
+import dj_database_url 
+
+ON_HEROKU = os.environ.get('ON_HEROKU')
+HEROKU_SERVER = os.environ.get('HEROKU_SERVER')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -98,13 +102,15 @@ WSGI_APPLICATION = 'Pastoral.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE" : "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3")
+if ON_HEROKU:
+    DATABASE_URL = 'postgresql://<postgresql>'
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE" : "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3")
+        }
     }
-}
 
 #DATABASES = {
 #    'default': dj_database_url.config(
@@ -143,7 +149,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-DATABASES['default'] = dj_database_url.config(default='postgresql-silhouetted-74448',conn_max_age=600, ssl_require=True)
+#DATABASES['default'] = dj_database_url.config(default='postgresql-silhouetted-74448',conn_max_age=600, ssl_require=True)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -158,6 +164,5 @@ STATICFILES_DIRS = (
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
-
 
 django_heroku.settings(locals())
