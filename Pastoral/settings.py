@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'Pastoral.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 if ON_HEROKU:
-    DATABASE_URL = 'postgresql://<postgresql>'
+    DATABASE_URL = 'postgres://zlufkhuvsjytut:5df2a0d7270c924d79347fcee71292e721675d586f1c0ca7b020733da0eae9c7@ec2-54-211-238-131.compute-1.amazonaws.com:5432/d7ebqa2mscim4g'
 else:
     DATABASES = {
         "default": {
