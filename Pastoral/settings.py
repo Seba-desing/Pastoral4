@@ -17,7 +17,7 @@ from decouple import config
 import django_heroku
 django_heroku.settings(locals())
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOCIAL_AUTH_FACEBOOK_KEY = '2427881034187748'
 SOCIAL_AUTH_FACEBOOK_SECRET = '6698a27c22483df3a2e163788ffc4dfd'
 
@@ -150,10 +150,10 @@ AUTHENTICATION_BACKENDS = (
 'django.contrib.auth.backends.ModelBackend',
 )
 
-STATIC_ROOT = os.path.join('BASE_DIR', 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR , 'static'),
 )
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
