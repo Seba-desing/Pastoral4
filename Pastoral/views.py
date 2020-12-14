@@ -25,12 +25,15 @@ def registrar_usuario(request):
             user = authenticate(username = username, password = password)
             login(request, user)
             return redirect(to='/index2/')
-    return render(request,'Registration/registrar.html',data)
+    return render(request,'registration/registrar.html',data)
 def index2(request):
     return render(request,"index2.html")
 
 def listar_usuarios(request):
     usuarios = User.objects.all()
     return render(request,'listar_usuarios.html',{"usuarios": usuarios, "email": usuarios})
+
+def privacidad(request):
+    return render(request,'pp.html')    
 
     

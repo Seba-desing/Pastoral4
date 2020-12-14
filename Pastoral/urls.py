@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import tres, seis, registrar_usuario, index2, listar_usuarios
+from .views import tres, seis, registrar_usuario, index2, listar_usuarios, privacidad
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
@@ -28,6 +28,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('registro/', registrar_usuario, name="registrar"),
     path('listar_usuarios/', listar_usuarios, name="listar"),
-    path('',index2),
+    path('', include('allauth.urls')),
+    path('privacidad/', privacidad),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
