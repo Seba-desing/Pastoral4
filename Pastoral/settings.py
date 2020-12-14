@@ -19,6 +19,7 @@ import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 SOCIAL_AUTH_FACEBOOK_KEY = '2427881034187748'
 SOCIAL_AUTH_FACEBOOK_SECRET = '6698a27c22483df3a2e163788ffc4dfd'
 
@@ -76,7 +77,7 @@ ROOT_URLCONF = 'Pastoral.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Pastoral/html'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -157,5 +158,6 @@ STATICFILES_DIRS = (
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
+
 
 django_heroku.settings(locals())
