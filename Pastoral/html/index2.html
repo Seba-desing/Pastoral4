@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/index2.css'%}">
+    <link rel="stylesheet" href="https://use.typekit.net/njp8whm.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="uno">
+            <a href="/tres"><img src="{% static 'img/portada1.png' %}" alt=""></a>
+        </div>
+        <div class="dos">
+            <a href="/seis"><img src="{% static 'img/portada2.png'%}" alt=""></a>
+        </div>
+        <div class="cerrar">
+            <ul>
+                {% if user.is_authenticated %}
+                <li><a href="">{{ user.username }}</a></li>
+                {% endif%}
+            </ul>
+        </div> 
+        <div class="cerrar2">
+            <ul>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Cerrar Sesión</a></li>
+                {%else%}
+                <li><a href="{% url 'login' %}">Iniciar Sesión</a></li>
+                {% endif%}
+            </ul>
+        </div>
+        <div class = "historial">
+            <a href="{% url 'listar' %}">Historial de usuarios</a>
+        </div>
+    </div>
+    
+</body>
+</html>

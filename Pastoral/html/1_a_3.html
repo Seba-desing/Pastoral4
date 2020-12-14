@@ -1,0 +1,468 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>1 a 3 años</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/1a3.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital@1&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="book-content">
+                <div class="book">
+                    <div class="face-front" id="portada"></div>
+                    <div class="face-back" id="trsf"  > </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p3"></div>
+                    <div class="face-back" id="p4" ></div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p5">
+                        <canvas id="canvas" class="c5" height="590" width="475"></canvas><br>
+                        <input type="color" id="color" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download">
+                            <input type="button" value="Descargar" onClick="descargar()">
+                        </a>
+                    </div>
+                    
+                    <div class="face-back" id="p6"></div></div>
+
+                <div class="book">
+                    <div class="face-front" id="p7"> 
+                        <canvas id="canvas2" class="c7" height="590" width="475"></canvas><br>
+                        <input type="color" id="color2" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor2" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download2">
+                            <input type="button" value="Descargar" onClick="descargar2()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p8"></div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p9">
+                        <canvas id="canvas9" class="c9" height="590" width="475"></canvas><br>
+                        <input type="color" id="color9" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor9" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download9">
+                            <input type="button" value="Descargar" onClick="descargar9()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p10"> </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p11"> 
+                        <canvas id="canvas11" class="c11" height="590" width="475"></canvas><br>
+                        <input type="color" id="color11" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor11" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download11">
+                            <input type="button" value="Descargar" onClick="descargar11()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p12"> </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p13">
+                        <canvas id="canvas13" class="c13" height="590" width="475"></canvas><br>
+                        <input type="color" id="color13" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor13" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download13">
+                            <input type="button" value="Descargar" onClick="descargar13()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p14"> </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p15"> 
+                        <canvas id="canvas15" class="c15" height="590" width="475"></canvas><br>
+                        <input type="color" id="color15" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor15" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download15">
+                            <input type="button" value="Descargar" onClick="descargar15()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p16"> </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p17">
+                        <canvas id="canvas17" class="c17" height="590" width="475"></canvas><br>
+                        <input type="color" id="color17" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor17" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download17">
+                            <input type="button" value="Descargar" onClick="descargar17()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p18"> </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p19">
+                        <canvas id="canvas19" class="c19" height="590" width="475"></canvas><br>
+                        <input type="color" id="color19" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor19" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download19">
+                            <input type="button" value="Descargar" onClick="descargar19()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p20"></div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p21"> 
+                        <canvas id="canvas21" class="c21" height="590" width="475"></canvas><br>
+                        <input type="color" id="color21" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor21" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download21">
+                            <input type="button" value="Descargar" onClick="descargar21()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="p22">
+                        <canvas id="canvas22" class="c22" height="620" width="475"></canvas><br>
+                        <input type="color" id="color22" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor22" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download22">
+                            <input type="button" value="Descargar" onClick="descargar22()">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="face-front" id="p23"> 
+                        <canvas id="canvas23" class="c23" height="620" width="475"></canvas><br>
+                        <input type="color" id="color23" oninput="defcolor(this.value);">
+                        <input type="range" id="grosor23" oninput="defgrosor(this.value);" min="1" max="10" value="1">
+                        <a id="download23">
+                            <input type="button" value="Descargar" onClick="descargar23()">
+                        </a>
+                    </div>
+                    <div class="face-back" id="portada-back" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="{% static 'js/app.js' %}"></script>
+        <script src="{% static 'js/canvasp7.js' %}"></script>
+        <script src="{% static 'js/canvasp9.js' %}"></script>
+        <script src="{% static 'js/canvasp11.js' %}"></script>
+        <script src="{% static 'js/canvasp13.js' %}"></script>
+        <script src="{% static 'js/canvasp15.js' %}"></script>
+        <script src="{% static 'js/canvasp17.js' %}"></script>
+        <script src="{% static 'js/canvasp19.js' %}"></script>
+        <script src="{% static 'js/canvasp21.js' %}"></script>
+        <script src="{% static 'js/canvasp22.js' %}"></script>
+        <script src="{% static 'js/canvasp23.js' %}"></script>
+
+        <script>
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+
+            var img =  new Image();
+            img.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-5-2.png"
+            
+            img.onload = function()
+            {
+                ctx.drawImage(img, 0,0);
+            }
+
+            function descargar()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas2 = document.getElementById('canvas2');
+            var ctx2 = canvas2.getContext('2d');
+
+            var img2 =  new Image();
+            img2.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-7-2.png"
+            
+            img2.onload = function()
+            {
+                ctx2.drawImage(img2, 0,0);
+            }
+
+            function descargar2()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas2.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download2");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas2.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas9 = document.getElementById('canvas9');
+            var ctx9 = canvas9.getContext('2d');
+
+            var img9 =  new Image();
+            img9.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-9-2.png"
+            
+            img9.onload = function()
+            {
+                ctx9.drawImage(img9, 0,0);
+            }
+
+            function descargar9()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas9.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download9");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas9.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas11 = document.getElementById('canvas11');
+            var ctx11 = canvas11.getContext('2d');
+
+            var img11 =  new Image();
+            img11.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-11-2.png"
+            
+            img11.onload = function()
+            {
+                ctx11.drawImage(img11, 0,0);
+            }
+
+            function descargar11()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas11.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download11");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas11.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas13 = document.getElementById('canvas13');
+            var ctx13 = canvas13.getContext('2d');
+
+            var img13 =  new Image();
+            img13.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-13-2.png"
+            
+            img13.onload = function()
+            {
+                ctx13.drawImage(img13, 0,0);
+            }
+
+            function descargar13()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas13.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download13");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas13.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas15 = document.getElementById('canvas15');
+            var ctx15 = canvas15.getContext('2d');
+
+            var img15 =  new Image();
+            img15.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-15-2.png"
+            
+            img15.onload = function()
+            {
+                ctx15.drawImage(img15, 0,0);
+            }
+
+            function descargar15()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas15.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download15");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas15.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas17 = document.getElementById('canvas17');
+            var ctx17 = canvas17.getContext('2d');
+
+            var img17 =  new Image();
+            img17.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-17-2.png"
+            
+            img17.onload = function()
+            {
+                ctx17.drawImage(img17, 0,0);
+            }
+
+            function descargar17()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas17.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download17");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas17.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas19 = document.getElementById('canvas19');
+            var ctx19 = canvas19.getContext('2d');
+
+            var img19 =  new Image();
+            img19.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-19-2.png"
+            
+            img19.onload = function()
+            {
+                ctx19.drawImage(img19, 0,0);
+            }
+
+            function descargar19()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas19.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download19");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas19.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas21 = document.getElementById('canvas21');
+            var ctx21 = canvas21.getContext('2d');
+
+            var img21 =  new Image();
+            img21.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-21-2.png"
+            
+            img21.onload = function()
+            {
+                ctx21.drawImage(img21, 0,0);
+            }
+
+            function descargar21()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas21.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download21");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas21.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas22 = document.getElementById('canvas22');
+            var ctx22 = canvas22.getContext('2d');
+
+            var img22 =  new Image();
+            img22.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-22-2.png"
+            
+            img22.onload = function()
+            {
+                ctx22.drawImage(img22, 0,0);
+            }
+
+            function descargar22()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas22.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download22");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas22.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+
+        <script>
+            var canvas23 = document.getElementById('canvas23');
+            var ctx23 = canvas23.getContext('2d');
+
+            var img23 =  new Image();
+            img23.src = "../static/img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-23-2.png"
+            
+            img23.onload = function()
+            {
+                ctx23.drawImage(img23, 0,0);
+            }
+
+            function descargar23()
+            {
+                var filename = prompt("¿Cómo nombraras a tu dibujo?","Nombre del dibujo");
+                if (canvas23.msToBlob){ //para internet explorer
+                    var blob = canvas.msToBlob();
+                    window.navigator.msSaveBlob(blob, filename + ".png" );// la extensión de preferencia pon jpg o png
+                } else {
+                    link = document.getElementById("download23");
+                    //Otros navegadores: Google chrome, Firefox etc...
+                    link.href = canvas23.toDataURL("image/png");// Extensión .png ("image/png") --- Extension .jpg ("image/jpeg")
+                    link.download = filename;
+                }
+            }
+        </script>
+    </body>
+</html>
