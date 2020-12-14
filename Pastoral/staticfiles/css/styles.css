@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url('fondo3.png');
+	background-size: cover;	
+}
+
+
+.uno
+{
+
+	height: 600px;
+	width: 400px;
+	background-color: white;
+	float: left;
+	margin-left: 240px;
+	margin-top: 60px;
+	
+	box-shadow: inset 3px 0px 20px -7px black;
+}
+
+.uno img
+{
+	max-width: 400px;
+	max-height: 600px;
+	
+}
+
+.dos
+{
+
+	height: 600px;
+	width: 400px;
+	background-color: white;
+	float: left;
+	margin-left: 100px;
+	margin-top: 60px;
+
+	box-shadow: inset 3px 0px 20px -7px black;
+}
+
+.dos img
+{
+	max-width: 400px;
+	max-height: 600px;
+	
+}
+
+.uno:hover
+{
+	transform: scale(1.05,1.05);
+}
+
+.dos:hover
+{
+	transform: scale(1.05,1.05);
+}
+
+.cerrar
+{
+	height: 40px;
+	width: 250px;
+	background-image: url('../img/descarga.jpg');
+	float: right;
+	margin-top: 620px;
+	box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cerrar:hover
+{
+	width: 270px;
+}
+
+
+button
+{
+	background: none;
+	font-size: 18px;
+	border: none;
+	font-family: 'Gentium Basic', serif;
+	color: white;
+	margin-top: 10px;
+	margin-left: 80px;
+}
+
+button:hover
+{
+	transform: scale(1.01,1.01);
+}
