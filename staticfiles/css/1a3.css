@@ -269,7 +269,7 @@ p{
 	background-image: url('../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-21.png');
 	background-size: 95%;
 }
-#p22
+/*#p22
 {
 	background-image: url('../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-.png');
 	background-size: 95%;
@@ -283,7 +283,7 @@ p{
 #p24
 {
     background: url('../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web-24.png');
-}
+}*/
 /* @media para hacer el texto responsivo */
 
 @media screen and (max-width: 800px){
