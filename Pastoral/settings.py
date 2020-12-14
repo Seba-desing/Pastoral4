@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import  dj_database_url
+from decouple import config
+import django_heroku
+django_heroku.settings(locals())
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 SOCIAL_AUTH_FACEBOOK_KEY = '2427881034187748'
@@ -22,7 +26,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = '/index2'
 LOGOUT_REDIRECT_URL = '/index2'
-STATICFILES_DIRS =['C:/dwy/Pastoral2-master/Pastoral/static']
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -100,8 +103,7 @@ WSGI_APPLICATION = 'Pastoral.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
-import  dj_database_url
-from decouple import config
+
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
@@ -150,7 +152,8 @@ AUTHENTICATION_BACKENDS = (
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
+STATICFILES_DIRS = (
+    BASE_DIR / "common_static",
+)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
-import django_heroku
-django_heroku.settings(locals())
+
