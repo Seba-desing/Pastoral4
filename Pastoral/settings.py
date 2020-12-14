@@ -36,7 +36,7 @@ SECRET_KEY = 'p43bx$yb=dsj#dntk*v$vntz&rs&7yo2u3g=#7-%y%nuv6%dt)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pastoral-duoc.herokuapp.com']
 
 
 # Application definition

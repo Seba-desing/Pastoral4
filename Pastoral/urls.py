@@ -28,5 +28,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('registro/', registrar_usuario, name="registrar"),
     path('listar_usuarios/', listar_usuarios, name="listar"),
+    path('',index2),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
