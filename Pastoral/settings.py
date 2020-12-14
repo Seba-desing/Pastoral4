@@ -34,7 +34,7 @@ LOGOUT_REDIRECT_URL = '/index2'
 SECRET_KEY = 'p43bx$yb=dsj#dntk*v$vntz&rs&7yo2u3g=#7-%y%nuv6%dt)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['pastoral-duoc.herokuapp.com']
 
