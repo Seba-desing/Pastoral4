@@ -150,10 +150,10 @@ AUTHENTICATION_BACKENDS = (
 'django.contrib.auth.backends.ModelBackend',
 )
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(config['BASE_DIR'], 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    BASE_DIR / "common_static",
+    BASE_DIR / "staticfiles",
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
 
