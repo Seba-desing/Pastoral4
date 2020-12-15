@@ -1,7 +1,7 @@
 
 
 
-$( document ).ready(function() {
+
 
 var canvas19=document.getElementById('canvas19');
 var ctx19=canvas19.getContext('2d');
@@ -56,5 +56,3 @@ function dibujar19(x1,y1,x2,y2)
     ctx19.stroke();
     ctx19.closePath();
 }
-    console.log( "ready!" );
-});

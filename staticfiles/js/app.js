@@ -1,21 +1,23 @@
 
 
-$( document ).ready(function() {
-	var front = document.querySelector('.face-front');
-	var back = document.querySelector('.face-back');
-	var flip = document.querySelector('.book-content');
-	var uno = document.querySelectorAll('.book');
-	var portada = document.querySelectorAll('#portada');
+
+location.reload(true);
+
+var front = document.querySelector('.face-front');
+var back = document.querySelector('.face-back');
+var flip = document.querySelector('.book-content');
+var uno = document.querySelectorAll('.book');
+var portada = document.querySelectorAll('#portada');
 	
-	function defcolor(c)
-	{
-		color=c;
-	}
+function defcolor(c)
+{
+	color=c;
+}
 	
-	function defgrosor(g)
-	{
-		grosor=g;
-	}
+function defgrosor(g)
+{
+	grosor=g;
+}
 var contZindex = 2;
 var customZindex = 1;
 
@@ -105,6 +107,5 @@ function dibujar(x1,y1,x2,y2)
     ctx.stroke();
     ctx.closePath();
 }
-    console.log( "ready!" );
-});
+
 

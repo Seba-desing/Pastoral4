@@ -1,6 +1,6 @@
 
 
-$( document ).ready(function() {
+
 
 var canvas9=document.getElementById('canvas9');
 var ctx9=canvas9.getContext('2d');
@@ -56,5 +56,3 @@ function dibujar9(x1,y1,x2,y2)
     ctx9.stroke();
     ctx9.closePath();
 }
-    console.log( "ready!" );
-});

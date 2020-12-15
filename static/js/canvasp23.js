@@ -1,6 +1,6 @@
 
 
-$( document ).ready(function() {
+
 var canvas23=document.getElementById('canvas23');
 var ctx23=canvas23.getContext('2d');
 var rect23=canvas23.getBoundingClientRect();
@@ -55,5 +55,3 @@ function dibujar23(x1,y1,x2,y2)
     ctx23.stroke();
     ctx23.closePath();
 }
-    console.log( "ready!" );
-});

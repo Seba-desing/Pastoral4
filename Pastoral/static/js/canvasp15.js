@@ -1,7 +1,7 @@
 
 
 
-$( document ).ready(function() {
+
 
 var canvas15=document.getElementById('canvas15');
 var ctx15=canvas15.getContext('2d');
@@ -56,5 +56,3 @@ function dibujar15(x1,y1,x2,y2)
     ctx15.stroke();
     ctx15.closePath();
 }
-    console.log( "ready!" );
-});

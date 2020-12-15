@@ -3,7 +3,7 @@
 
 
 
-$( document ).ready(function() {
+
     var canvas2=document.getElementById('canvas2');
     var ctx2=canvas2.getContext('2d');
     var rect2=canvas2.getBoundingClientRect();
@@ -59,5 +59,3 @@ function dibujar2(x1,y1,x2,y2)
     ctx2.stroke();
     ctx2.closePath();
 }
-    console.log( "ready!" );
-});

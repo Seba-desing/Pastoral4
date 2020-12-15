@@ -1,6 +1,6 @@
 
 
-$( document ).ready(function() {
+
 
 var canvas22=document.getElementById('canvas22');
 var ctx22=canvas22.getContext('2d');
@@ -56,5 +56,3 @@ function dibujar22(x1,y1,x2,y2)
     ctx22.stroke();
     ctx22.closePath();
 }
-    console.log( "ready!" );
-});

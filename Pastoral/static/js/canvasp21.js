@@ -2,7 +2,7 @@
 
 
 
-$( document ).ready(function() {
+
 
 var canvas21=document.getElementById('canvas21');
 var ctx21=canvas21.getContext('2d');
@@ -57,5 +57,3 @@ function dibujar21(x1,y1,x2,y2)
     ctx21.stroke();
     ctx21.closePath();
 }
-    console.log( "ready!" );
-});

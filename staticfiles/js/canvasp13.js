@@ -1,6 +1,6 @@
 
 
-$( document ).ready(function() {
+
 var canvas13=document.getElementById('canvas13');
 var ctx13=canvas13.getContext('2d');
 var rect13=canvas13.getBoundingClientRect();
@@ -56,5 +56,3 @@ function dibujar13(x1,y1,x2,y2)
     ctx13.stroke();
     ctx13.closePath();
 }
-    console.log( "ready!" );
-});
