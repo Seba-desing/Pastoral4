@@ -167,7 +167,14 @@
         <script src="{% static 'js/canvasp21.js' %}"></script>
         <script src="{% static 'js/canvasp22.js' %}"></script>
         <script src="{% static 'js/canvasp23.js' %}"></script>
-
+        <script>
+            window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+                }
+            }    
+        </script>
         <script>
             var canvas = document.getElementById('canvas');
             var ctx = canvas.getContext('2d');

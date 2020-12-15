@@ -156,7 +156,14 @@
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-        
+        <script>
+            window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+                }
+            }    
+        </script>
         <script src="{% static 'js/app.js' %}"></script>
         <script src="{% static 'js/canvasp7.js' %}"></script>
         <script src="{% static 'js/canvasp9.js' %}"></script>
