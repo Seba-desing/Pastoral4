@@ -34,6 +34,9 @@ def listar_usuarios(request):
     return render(request,'listar_usuarios.html',{"usuarios": usuarios, "email": usuarios})
 
 def privacidad(request):
-    return render(request,'pp.html')    
+    return render(request,'pp.html')   
+
+def usabilidad(request):
+    return render(request,'uso.html')
 
     
