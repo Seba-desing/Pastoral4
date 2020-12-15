@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index2/', index2),
+    path('index2/', index2, name="inicio"),
     path('accounts/', include('django.contrib.auth.urls')),
     path('tres/', tres),
     path('seis/',seis),
@@ -29,7 +29,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('registro/', registrar_usuario, name="registrar"),
     path('listar_usuarios/', listar_usuarios, name="listar"),
-    path('', RedirectView.as_view(url='/accounts/login/')),
+    path('', RedirectView.as_view(url='/accounts/login/'),name="login"),
     path('privacidad/', privacidad),
     path('usabilidad/', usabilidad),
     path('eliminar/', eliminar),

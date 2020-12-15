@@ -31,7 +31,7 @@ def index2(request):
 
 def listar_usuarios(request):
     usuarios = User.objects.all()
-    return render(request,'listar_usuarios.html',{"usuarios": usuarios, "email": usuarios})
+    return render(request,'listar_usuarios.html',{"usuarios": usuarios, "email": usuarios, "last_login": usuarios})
 
 def privacidad(request):
     return render(request,'pp.html')   

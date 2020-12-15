@@ -15,15 +15,18 @@
             <tr >
                 <th class="col">Usuario</th>
                 <th class="col">Email</th>
+                <th class="col">Ultimo inicio de sesion</th>
             </tr>
             {% for i in usuarios %}
             <tr class="">
                 
                 <td>{{i.username}} </td>  
-                <td>{{i.email}} </td>         
+                <td>{{i.email}} </td>
+                <td>{{i.last_login}}</td>         
             </tr>
             {% endfor %}
         </table>
+        <a href="{% url 'inicio' %}"><input type="button"  value="vuelta al inicio" class="btn btn-secondary"></a>
     </div>
 </body>
 </html>
