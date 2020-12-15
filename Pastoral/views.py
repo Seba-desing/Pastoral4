@@ -39,4 +39,7 @@ def privacidad(request):
 def usabilidad(request):
     return render(request,'uso.html')
 
+def eliminar(request):
+    return render(request,'Eliminar.html')    
+
     
