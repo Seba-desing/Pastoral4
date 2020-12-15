@@ -4,7 +4,10 @@ var ctx15=canvas15.getContext('2d');
 var rect15=canvas15.getBoundingClientRect();
 var x15=0, y15=0, dibujando15=false, color15='black', grosor15=1;
 
-function defcolor15(c)
+
+
+$( document ).ready(function() {
+    function defcolor15(c)
 {
     color15=c;
 }
@@ -53,3 +56,5 @@ function dibujar15(x1,y1,x2,y2)
     ctx15.stroke();
     ctx15.closePath();
 }
+    console.log( "ready!" );
+});

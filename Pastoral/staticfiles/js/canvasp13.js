@@ -4,7 +4,10 @@ var ctx13=canvas13.getContext('2d');
 var rect13=canvas13.getBoundingClientRect();
 var x13=0, y13=0, dibujando13=false, color13='black', grosor13=1;
 
-function defcolor13(c)
+
+
+$( document ).ready(function() {
+    function defcolor13(c)
 {
     color13=c;
 }
@@ -53,3 +56,5 @@ function dibujar13(x1,y1,x2,y2)
     ctx13.stroke();
     ctx13.closePath();
 }
+    console.log( "ready!" );
+});

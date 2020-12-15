@@ -4,7 +4,10 @@ var ctx21=canvas21.getContext('2d');
 var rect21=canvas21.getBoundingClientRect();
 var x21=0, y21=0, dibujando21=false, color21='black', grosor21=1;
 
-function defcolor21(c)
+
+
+$( document ).ready(function() {
+    function defcolor21(c)
 {
     color21=c;
 }
@@ -53,3 +56,5 @@ function dibujar21(x1,y1,x2,y2)
     ctx21.stroke();
     ctx21.closePath();
 }
+    console.log( "ready!" );
+});

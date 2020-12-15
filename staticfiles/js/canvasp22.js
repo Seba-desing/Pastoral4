@@ -4,7 +4,10 @@ var ctx22=canvas22.getContext('2d');
 var rect22=canvas22.getBoundingClientRect();
 var x22=0, y22=0, dibujando22=false, color22='black', grosor22=1;
 
-function defcolor22(c)
+
+
+$( document ).ready(function() {
+    function defcolor22(c)
 {
     color22=c;
 }
@@ -53,3 +56,5 @@ function dibujar22(x1,y1,x2,y2)
     ctx22.stroke();
     ctx22.closePath();
 }
+    console.log( "ready!" );
+});

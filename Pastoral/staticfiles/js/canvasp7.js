@@ -7,7 +7,10 @@ var ctx2=canvas2.getContext('2d');
 var rect2=canvas2.getBoundingClientRect();
 var x2=0, y2=0, dibujando2=false, color2='black', grosor2=1;
 
-function defcolor2(c)
+
+
+$( document ).ready(function() {
+    function defcolor2(c)
 {
     color2=c;
 }
@@ -56,4 +59,5 @@ function dibujar2(x1,y1,x2,y2)
     ctx2.stroke();
     ctx2.closePath();
 }
-
+    console.log( "ready!" );
+});

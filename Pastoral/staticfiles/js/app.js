@@ -3,6 +3,7 @@ var back = document.querySelector('.face-back');
 var flip = document.querySelector('.book-content');
 var uno = document.querySelectorAll('.book');
 var portada = document.querySelectorAll('#portada');
+$( document ).ready(function() {
 
 var contZindex = 2;
 var customZindex = 1;
@@ -101,6 +102,6 @@ function dibujar(x1,y1,x2,y2)
     ctx.stroke();
     ctx.closePath();
 }
-
-
+    console.log( "ready!" );
+});
 

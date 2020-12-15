@@ -4,7 +4,9 @@ var ctx9=canvas9.getContext('2d');
 var rect9=canvas9.getBoundingClientRect();
 var x9=0, y9=0, dibujando9=false, color9='black', grosor9=1;
 
-function defcolor9(c)
+
+$( document ).ready(function() {
+    function defcolor9(c)
 {
     color9=c;
 }
@@ -53,3 +55,5 @@ function dibujar9(x1,y1,x2,y2)
     ctx9.stroke();
     ctx9.closePath();
 }
+    console.log( "ready!" );
+});

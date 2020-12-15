@@ -4,7 +4,10 @@ var ctx23=canvas23.getContext('2d');
 var rect23=canvas23.getBoundingClientRect();
 var x23=0, y23=0, dibujando23=false, color23='black', grosor23=1;
 
-function defcolor23(c)
+
+
+$( document ).ready(function() {
+    function defcolor23(c)
 {
     color23=c;
 }
@@ -53,3 +56,5 @@ function dibujar23(x1,y1,x2,y2)
     ctx23.stroke();
     ctx23.closePath();
 }
+    console.log( "ready!" );
+});

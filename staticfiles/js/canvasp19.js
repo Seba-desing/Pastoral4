@@ -4,7 +4,10 @@ var ctx19=canvas19.getContext('2d');
 var rect19=canvas19.getBoundingClientRect();
 var x19=0, y19=0, dibujando19=false, color19='black', grosor19=1;
 
-function defcolor19(c)
+
+
+$( document ).ready(function() {
+    function defcolor19(c)
 {
     color19=c;
 }
@@ -53,3 +56,5 @@ function dibujar19(x1,y1,x2,y2)
     ctx19.stroke();
     ctx19.closePath();
 }
+    console.log( "ready!" );
+});

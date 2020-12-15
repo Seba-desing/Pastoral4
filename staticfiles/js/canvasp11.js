@@ -4,7 +4,9 @@ var ctx11=canvas11.getContext('2d');
 var rect11=canvas11.getBoundingClientRect();
 var x11=0, y11=0, dibujando11=false, color11='black', grosor11=1;
 
-function defcolor11(c)
+
+$( document ).ready(function() {
+    function defcolor11(c)
 {
     color11=c;
 }
@@ -53,3 +55,5 @@ function dibujar11(x1,y1,x2,y2)
     ctx11.stroke();
     ctx11.closePath();
 }
+    console.log( "ready!" );
+});
