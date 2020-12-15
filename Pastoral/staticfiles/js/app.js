@@ -1,7 +1,12 @@
 
 
 
-location.reload(true);
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 
 var front = document.querySelector('.face-front');
 var back = document.querySelector('.face-back');
