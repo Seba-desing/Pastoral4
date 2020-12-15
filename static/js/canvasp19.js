@@ -1,4 +1,8 @@
 
+
+
+$( document ).ready(function() {
+
 var canvas19=document.getElementById('canvas19');
 var ctx19=canvas19.getContext('2d');
 var rect19=canvas19.getBoundingClientRect();
@@ -13,10 +17,6 @@ function defgrosor19(g)
 {
     grosor19=g;
 }
-
-$( document ).ready(function() {
-
-
 canvas19.addEventListener('mousedown', function(e)
 {
     x19=e.clientX - rect19.left;

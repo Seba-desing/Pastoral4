@@ -1,4 +1,8 @@
 
+
+
+$( document ).ready(function() {
+
 var canvas15=document.getElementById('canvas15');
 var ctx15=canvas15.getContext('2d');
 var rect15=canvas15.getBoundingClientRect();
@@ -13,10 +17,6 @@ function defgrosor15(g)
 {
     grosor15=g;
 }
-
-$( document ).ready(function() {
-
-
 canvas15.addEventListener('mousedown', function(e)
 {
     x15=e.clientX - rect15.left;

@@ -1,4 +1,6 @@
 
+
+$( document ).ready(function() {
 var canvas23=document.getElementById('canvas23');
 var ctx23=canvas23.getContext('2d');
 var rect23=canvas23.getBoundingClientRect();
@@ -14,8 +16,6 @@ function defgrosor23(g)
 {
     grosor23=g;
 }
-$( document ).ready(function() {
-
 canvas23.addEventListener('mousedown', function(e)
 {
     x23=e.clientX - rect23.left;

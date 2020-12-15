@@ -1,4 +1,7 @@
 
+
+$( document ).ready(function() {
+
 var canvas22=document.getElementById('canvas22');
 var ctx22=canvas22.getContext('2d');
 var rect22=canvas22.getBoundingClientRect();
@@ -13,9 +16,6 @@ function defgrosor22(g)
 {
     grosor22=g;
 }
-
-$( document ).ready(function() {
-
 
 canvas22.addEventListener('mousedown', function(e)
 {

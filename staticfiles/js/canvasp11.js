@@ -1,4 +1,7 @@
 
+
+
+$( document ).ready(function() {
 var canvas11=document.getElementById('canvas11');
 var ctx11=canvas11.getContext('2d');
 var rect11=canvas11.getBoundingClientRect();
@@ -13,9 +16,6 @@ function defgrosor11(g)
 {
     grosor11=g;
 }
-
-$( document ).ready(function() {
-
 
 canvas11.addEventListener('mousedown', function(e)
 {

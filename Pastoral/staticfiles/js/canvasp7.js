@@ -2,23 +2,23 @@
 
 
 
-var canvas2=document.getElementById('canvas2');
-var ctx2=canvas2.getContext('2d');
-var rect2=canvas2.getBoundingClientRect();
-var x2=0, y2=0, dibujando2=false, color2='black', grosor2=1;
-
-function defcolor2(c)
-{
-    color2=c;
-}
-
-function defgrosor2(g)
-{
-    grosor2=g;
-}
 
 $( document ).ready(function() {
-
+    var canvas2=document.getElementById('canvas2');
+    var ctx2=canvas2.getContext('2d');
+    var rect2=canvas2.getBoundingClientRect();
+    var x2=0, y2=0, dibujando2=false, color2='black', grosor2=1;
+    
+    function defcolor2(c)
+    {
+        color2=c;
+    }
+    
+    function defgrosor2(g)
+    {
+        grosor2=g;
+    }
+    
 
 canvas2.addEventListener('mousedown', function(e)
 {

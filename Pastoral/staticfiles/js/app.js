@@ -1,21 +1,21 @@
-var front = document.querySelector('.face-front');
-var back = document.querySelector('.face-back');
-var flip = document.querySelector('.book-content');
-var uno = document.querySelectorAll('.book');
-var portada = document.querySelectorAll('#portada');
 
-function defcolor(c)
-{
-    color=c;
-}
-
-function defgrosor(g)
-{
-    grosor=g;
-}
 
 $( document ).ready(function() {
-
+	var front = document.querySelector('.face-front');
+	var back = document.querySelector('.face-back');
+	var flip = document.querySelector('.book-content');
+	var uno = document.querySelectorAll('.book');
+	var portada = document.querySelectorAll('#portada');
+	
+	function defcolor(c)
+	{
+		color=c;
+	}
+	
+	function defgrosor(g)
+	{
+		grosor=g;
+	}
 var contZindex = 2;
 var customZindex = 1;
 

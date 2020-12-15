@@ -1,4 +1,9 @@
 
+
+
+
+$( document ).ready(function() {
+
 var canvas21=document.getElementById('canvas21');
 var ctx21=canvas21.getContext('2d');
 var rect21=canvas21.getBoundingClientRect();
@@ -13,10 +18,6 @@ function defgrosor21(g)
 {
     grosor21=g;
 }
-
-
-$( document ).ready(function() {
-
 canvas21.addEventListener('mousedown', function(e)
 {
     x21=e.clientX - rect21.left;
