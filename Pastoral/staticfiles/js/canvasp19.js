@@ -4,10 +4,7 @@ var ctx19=canvas19.getContext('2d');
 var rect19=canvas19.getBoundingClientRect();
 var x19=0, y19=0, dibujando19=false, color19='black', grosor19=1;
 
-
-
-$( document ).ready(function() {
-    function defcolor19(c)
+function defcolor19(c)
 {
     color19=c;
 }
@@ -16,6 +13,9 @@ function defgrosor19(g)
 {
     grosor19=g;
 }
+
+$( document ).ready(function() {
+
 
 canvas19.addEventListener('mousedown', function(e)
 {

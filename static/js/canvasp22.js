@@ -4,10 +4,7 @@ var ctx22=canvas22.getContext('2d');
 var rect22=canvas22.getBoundingClientRect();
 var x22=0, y22=0, dibujando22=false, color22='black', grosor22=1;
 
-
-
-$( document ).ready(function() {
-    function defcolor22(c)
+function defcolor22(c)
 {
     color22=c;
 }
@@ -16,6 +13,9 @@ function defgrosor22(g)
 {
     grosor22=g;
 }
+
+$( document ).ready(function() {
+
 
 canvas22.addEventListener('mousedown', function(e)
 {

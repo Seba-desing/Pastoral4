@@ -4,9 +4,7 @@ var ctx11=canvas11.getContext('2d');
 var rect11=canvas11.getBoundingClientRect();
 var x11=0, y11=0, dibujando11=false, color11='black', grosor11=1;
 
-
-$( document ).ready(function() {
-    function defcolor11(c)
+function defcolor11(c)
 {
     color11=c;
 }
@@ -15,6 +13,9 @@ function defgrosor11(g)
 {
     grosor11=g;
 }
+
+$( document ).ready(function() {
+
 
 canvas11.addEventListener('mousedown', function(e)
 {

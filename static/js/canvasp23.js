@@ -5,9 +5,7 @@ var rect23=canvas23.getBoundingClientRect();
 var x23=0, y23=0, dibujando23=false, color23='black', grosor23=1;
 
 
-
-$( document ).ready(function() {
-    function defcolor23(c)
+function defcolor23(c)
 {
     color23=c;
 }
@@ -16,6 +14,7 @@ function defgrosor23(g)
 {
     grosor23=g;
 }
+$( document ).ready(function() {
 
 canvas23.addEventListener('mousedown', function(e)
 {

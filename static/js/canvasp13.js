@@ -5,9 +5,7 @@ var rect13=canvas13.getBoundingClientRect();
 var x13=0, y13=0, dibujando13=false, color13='black', grosor13=1;
 
 
-
-$( document ).ready(function() {
-    function defcolor13(c)
+function defcolor13(c)
 {
     color13=c;
 }
@@ -16,6 +14,8 @@ function defgrosor13(g)
 {
     grosor13=g;
 }
+$( document ).ready(function() {
+
 
 canvas13.addEventListener('mousedown', function(e)
 {

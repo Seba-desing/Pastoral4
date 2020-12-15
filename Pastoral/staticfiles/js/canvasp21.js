@@ -4,10 +4,7 @@ var ctx21=canvas21.getContext('2d');
 var rect21=canvas21.getBoundingClientRect();
 var x21=0, y21=0, dibujando21=false, color21='black', grosor21=1;
 
-
-
-$( document ).ready(function() {
-    function defcolor21(c)
+function defcolor21(c)
 {
     color21=c;
 }
@@ -16,6 +13,9 @@ function defgrosor21(g)
 {
     grosor21=g;
 }
+
+
+$( document ).ready(function() {
 
 canvas21.addEventListener('mousedown', function(e)
 {

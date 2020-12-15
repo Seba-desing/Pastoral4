@@ -4,9 +4,7 @@ var ctx9=canvas9.getContext('2d');
 var rect9=canvas9.getBoundingClientRect();
 var x9=0, y9=0, dibujando9=false, color9='black', grosor9=1;
 
-
-$( document ).ready(function() {
-    function defcolor9(c)
+function defcolor9(c)
 {
     color9=c;
 }
@@ -15,6 +13,9 @@ function defgrosor9(g)
 {
     grosor9=g;
 }
+
+$( document ).ready(function() {
+
 
 canvas9.addEventListener('mousedown', function(e)
 {

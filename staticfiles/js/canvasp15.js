@@ -4,10 +4,7 @@ var ctx15=canvas15.getContext('2d');
 var rect15=canvas15.getBoundingClientRect();
 var x15=0, y15=0, dibujando15=false, color15='black', grosor15=1;
 
-
-
-$( document ).ready(function() {
-    function defcolor15(c)
+function defcolor15(c)
 {
     color15=c;
 }
@@ -16,6 +13,9 @@ function defgrosor15(g)
 {
     grosor15=g;
 }
+
+$( document ).ready(function() {
+
 
 canvas15.addEventListener('mousedown', function(e)
 {

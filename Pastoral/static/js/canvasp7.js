@@ -7,10 +7,7 @@ var ctx2=canvas2.getContext('2d');
 var rect2=canvas2.getBoundingClientRect();
 var x2=0, y2=0, dibujando2=false, color2='black', grosor2=1;
 
-
-
-$( document ).ready(function() {
-    function defcolor2(c)
+function defcolor2(c)
 {
     color2=c;
 }
@@ -19,6 +16,9 @@ function defgrosor2(g)
 {
     grosor2=g;
 }
+
+$( document ).ready(function() {
+
 
 canvas2.addEventListener('mousedown', function(e)
 {
