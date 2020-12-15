@@ -5,6 +5,7 @@ from django.shortcuts import redirect, render
 from .forms import CustomUserForm, UserCreationForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import  permission_required
 
 def tres(request):
     return render(request,"1_a_3.html")    
@@ -28,7 +29,7 @@ def registrar_usuario(request):
     return render(request,'registration/registrar.html',data)
 def index2(request):
     return render(request,"index2.html")
-
+@permission_required('sites.view_site')
 def listar_usuarios(request):
     usuarios = User.objects.all()
     return render(request,'listar_usuarios.html',{"usuarios": usuarios, "email": usuarios, "last_login": usuarios})

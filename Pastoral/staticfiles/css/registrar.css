@@ -1,0 +1,12 @@
+body
+{
+    background-image: url('fondo3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container a{
+    padding-top: 20px;
+}
+.titulo{
+    justify-content: center;
+}

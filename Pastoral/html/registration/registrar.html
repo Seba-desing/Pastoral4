@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="container">
+        <br>
         <div class="titulo">
             <h2>Registro de usuario</h2>
         </div>
@@ -22,10 +23,11 @@
             {{ form|crispy }}
         
 
-            <input type="reset" value="Limpiar" class="btn btn-info">
-            <input type="submit" value="Registrar" class="btn btn-primary">
+            <input type="reset" value="Limpiar" class="btn btn-secondary">
+            <input type="submit" value="Registrar" class="btn btn-secondary">
         </form>
-        <a href="{% url 'login' %}"><input type="button"  value="cancelar" class="btn btn-secondary"></a>
+        <br>
+        <a href="{% url 'login' %}" class= "cancelar"><input type="button"  value="Cancelar" class="btn btn-secondary"></a>
     </div>    
 </body>
 </html>

@@ -153,4 +153,8 @@ button:hover
 	text-decoration: none;
 	color: white;
 }
+.historial:hover
+{
+	width: 300px;
+}
 

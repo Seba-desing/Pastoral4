@@ -11,22 +11,27 @@
 </head>
 <body>
     <div clas = "container">
-        <table class="table table-dark table-striped">
-            <tr >
-                <th class="col">Usuario</th>
-                <th class="col">Email</th>
-                <th class="col">Ultimo inicio de sesion</th>
-            </tr>
-            {% for i in usuarios %}
-            <tr class="">
-                
-                <td>{{i.username}} </td>  
-                <td>{{i.email}} </td>
-                <td>{{i.last_login}}</td>         
-            </tr>
-            {% endfor %}
-        </table>
-        <a href="{% url 'inicio' %}"><input type="button"  value="vuelta al inicio" class="btn btn-secondary"></a>
+        <br>
+        <br>
+        <div clas= "tabla">
+            <table class="table " >
+                <tr >
+                    <th class="">Usuario</th>
+                    <th class="">Email</th>
+                    <th class="">Ultimo inicio de sesion</th>
+                </tr>
+                {% for i in usuarios %}
+                <tr class="">
+                    
+                    <td>{{i.username}} </td>  
+                    <td>{{i.email}} </td>
+                    <td>{{i.last_login}}</td>         
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        
+        <a href="{% url 'inicio' %}"><input type="button"  value="Volver al inicio" class="btn btn-secondary"></a>
     </div>
 </body>
 </html>
