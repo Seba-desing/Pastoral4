@@ -15,4 +15,8 @@ body
 }
 .login{
     max-width: 60%;
+    justify-self: center;
+}
+a img:hover{
+    transform: scale(1.05,1.05);
 }

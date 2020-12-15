@@ -1,6 +1,6 @@
 body
 {
-    background-image: url('fondo3.png');
+    background-image: url("fondo3.f573ffeba960.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -15,8 +15,4 @@ body
 }
 .login{
     max-width: 60%;
-    justify-self: center;
-}
-a img:hover{
-    transform: scale(1.05,1.05);
 }
