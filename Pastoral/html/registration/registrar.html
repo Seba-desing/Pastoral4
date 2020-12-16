@@ -12,22 +12,24 @@
 <body>
     <div class="container">
         <br>
-        <div class="titulo">
-            <h2>Registro de usuario</h2>
+        <div class= "formulario">
+            <div class="titulo">
+                <h2>Registro de usuario</h2>
+            </div>
+    
+            <form action=""  method="POST">
+                {% csrf_token %}
+            
+            
+                {{ form|crispy }}
+            
+    
+                <input type="reset" value="Limpiar" class="btn btn-secondary">
+                <input type="submit" value="Registrar" class="btn btn-secondary">
+            </form>
+            <br>
+            <a href="{% url 'login' %}" class= "cancelar"><input type="button"  value="Cancelar" class="btn btn-secondary"></a>
         </div>
-
-        <form action=""  method="POST">
-            {% csrf_token %}
-        
-        
-            {{ form|crispy }}
-        
-
-            <input type="reset" value="Limpiar" class="btn btn-secondary">
-            <input type="submit" value="Registrar" class="btn btn-secondary">
-        </form>
-        <br>
-        <a href="{% url 'login' %}" class= "cancelar"><input type="button"  value="Cancelar" class="btn btn-secondary"></a>
     </div>    
 </body>
 </html>

@@ -13,11 +13,11 @@
         {
             box-sizing: border-box;
             background-color: #5f5c5c;
-            height:250px;
+            height:220px;
             width: 100%;
             text-align: center;
             padding-top:20px ;
-            margin-top: 130px;
+            margin-top: 70px;
             opacity: 80%;
             color: #0e0d0d;
         }
@@ -42,12 +42,11 @@
                 
                 {{ form|crispy }}
                 
-                <input type="submit"  value="Acceder" class="btn btn-secondary">
+                <input type="submit"  value="Acceder" class="btn btn-secondary acceder">
+                <p>Accede usando: </p>                 <a href="{% url 'social:begin' 'facebook' %}"><img src="{% static 'img/facebook.png'%}" alt=""></a>                <a href="{% provider_login_url 'google' %}"><img src="{% static 'img/gmail.png'%}" alt=""></a>
+                <br>
+                <p>También puedes crear una cuenta:</p>
                 <a href="{% url 'registrar' %}"><input type="button"  value="Registrar" class="btn btn-secondary"></a>
-                <br>
-                <br>
-                <a href="{% url 'social:begin' 'facebook' %}"><img src="{% static 'img/facebook.png'%}" alt=""></a>                <a href="{% provider_login_url 'google' %}"><img src="{% static 'img/gmail.png'%}" alt=""></a>
-                
             </form>            
         </div>
         <div id="foo" >

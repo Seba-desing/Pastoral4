@@ -10,3 +10,12 @@ body
 .titulo{
     justify-content: center;
 }
+.formulario{
+    max-width: 50%;
+    justify-self: center;
+}
+.container{
+    max-width: 1300px;
+    height: 720px;
+    text-align: center;
+}

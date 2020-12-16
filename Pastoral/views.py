@@ -6,11 +6,14 @@ from .forms import CustomUserForm, UserCreationForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import  permission_required
+import random
 
 def tres(request):
-    return render(request,"1_a_3.html")    
+    version = random.randint(1,99)
+    return render(request,"1_a_3.html",{"v": version})    
 def seis(request):
-    return render(request,"4_a_6.html")    
+    version = random.randint(1,99)
+    return render(request,"4_a_6.html",{"v": version})    
 def registrar_usuario(request):
     data = {
         'form':CustomUserForm()
