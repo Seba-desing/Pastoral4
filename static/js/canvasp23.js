@@ -50,8 +50,8 @@ function dibujar23(x1,y1,x2,y2)
     ctx23.beginPath();
     ctx23.strokeStyle=color;
     ctx23.lineWidth=grosor;
-    ctx23.moveTo(x1-309,y1);
-    ctx23.lineTo(x2-309,y2);
+    ctx23.moveTo(x1-80,y1);
+    ctx23.lineTo(x2-80,y2);
     ctx23.stroke();
     ctx23.closePath();
 }

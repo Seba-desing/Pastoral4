@@ -51,8 +51,8 @@ function dibujar9(x1,y1,x2,y2)
     ctx9.beginPath();
     ctx9.strokeStyle=color;
     ctx9.lineWidth=grosor;
-    ctx9.moveTo(x1-309,y1);
-    ctx9.lineTo(x2-309,y2);
+    ctx9.moveTo(x1-80,y1);
+    ctx9.lineTo(x2-80,y2);
     ctx9.stroke();
     ctx9.closePath();
 }

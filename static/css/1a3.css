@@ -269,6 +269,21 @@ p{
 	background-image: url('../img/1a3/Libro_de_Navidad_para_ninos._1_a_3_anos_web_21.png');
 	background-size: 95%;
 }
+
+.calibrar{
+	border-style: none;
+	padding: 10px;
+	background-color: #606970;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	border-radius:2px;
+	font-weight: 400;
+	margin-top: 150px;
+}
+.calibrar:hover{
+	background-color: #3a3d3f;
+}
 /* @media para hacer el texto responsivo */
 
 @media screen and (max-width: 800px){

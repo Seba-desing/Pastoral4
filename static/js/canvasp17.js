@@ -51,8 +51,8 @@ function dibujar17(x1,y1,x2,y2)
     ctx17.beginPath();
     ctx17.strokeStyle=color;
     ctx17.lineWidth=grosor;
-    ctx17.moveTo(x1-309,y1);
-    ctx17.lineTo(x2-309,y2);
+    ctx17.moveTo(x1-80,y1);
+    ctx17.lineTo(x2-80,y2);
     ctx17.stroke();
     ctx17.closePath();
 }

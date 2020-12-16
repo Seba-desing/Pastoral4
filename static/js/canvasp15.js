@@ -51,8 +51,8 @@ function dibujar15(x1,y1,x2,y2)
     ctx15.beginPath();
     ctx15.strokeStyle=color;
     ctx15.lineWidth=grosor;
-    ctx15.moveTo(x1-309,y1);
-    ctx15.lineTo(x2-309,y2);
+    ctx15.moveTo(x1-80,y1);
+    ctx15.lineTo(x2-80,y2);
     ctx15.stroke();
     ctx15.closePath();
 }

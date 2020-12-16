@@ -51,8 +51,8 @@ function dibujar22(x1,y1,x2,y2)
     ctx22.beginPath();
     ctx22.strokeStyle=color;
     ctx22.lineWidth=grosor;
-    ctx22.moveTo(x1+105,y1);
-    ctx22.lineTo(x2+105,y2);
+    ctx22.moveTo(x1-80,y1);
+    ctx22.lineTo(x2-80,y2);
     ctx22.stroke();
     ctx22.closePath();
 }

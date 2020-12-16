@@ -9,7 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/4a6.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
 
 
     </head>
@@ -154,9 +155,10 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-        <script src="{% static 'js/app.js' %}?{{ v }}"></script>
+        <script src="{% static 'js/app.js' %}?v=1"></script>
         <script src="{% static 'js/canvasp7.js' %}?{{ v }}"></script>
         <script src="{% static 'js/canvasp9.js' %}?{{ v }}"></script>
         <script src="{% static 'js/canvasp11.js' %}?{{ v }}"></script>
@@ -167,14 +169,14 @@
         <script src="{% static 'js/canvasp21.js' %}?{{ v }}"></script>
         <script src="{% static 'js/canvasp22.js' %}?{{ v }}"></script>
         <script src="{% static 'js/canvasp23.js' %}?{{ v }}"></script>
-        <script>
+        <!--<script>
             window.onload = function() {
             if(!window.location.hash) {
                 window.location = window.location + '#loaded';
                 window.location.reload(true);
                 }
             }    
-        </script>
+        </script>-->
         <script>
             var canvas = document.getElementById('canvas');
             var ctx = canvas.getContext('2d');

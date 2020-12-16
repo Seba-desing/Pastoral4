@@ -51,8 +51,8 @@ function dibujar11(x1,y1,x2,y2)
     ctx11.beginPath();
     ctx11.strokeStyle=color;
     ctx11.lineWidth=grosor;
-    ctx11.moveTo(x1-309,y1);
-    ctx11.lineTo(x2-309,y2);
+    ctx11.moveTo(x1-80,y1);
+    ctx11.lineTo(x2-80,y2);
     ctx11.stroke();
     ctx11.closePath();
 }
