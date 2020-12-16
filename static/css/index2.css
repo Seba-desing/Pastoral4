@@ -149,6 +149,7 @@ button:hover
 	float: right;
 	margin-top: 20px;
 	box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.4);
+	visibility: hidden;
 }
 .historial a{
 	padding-left: 20px;
