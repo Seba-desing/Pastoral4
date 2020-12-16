@@ -1,0 +1,21 @@
+body
+{
+    background-image: url("fondo3.f573ffeba960.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container a{
+    padding-top: 20px;
+}
+.titulo{
+    justify-content: center;
+}
+.formulario{
+    max-width: 50%;
+    justify-self: center;
+}
+.container{
+    max-width: 1300px;
+    height: 720px;
+    text-align: center;
+}
