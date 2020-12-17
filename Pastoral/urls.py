@@ -29,7 +29,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('registro/', registrar_usuario, name="registrar"),
     path('listar_usuarios/', listar_usuarios, name="listar"),
-    path('', RedirectView.as_view(url='/accounts/login/'),name="login"),
+    path('', index2),
     path('privacidad/', privacidad),
     path('usabilidad/', usabilidad),
     path('eliminar/', eliminar),
